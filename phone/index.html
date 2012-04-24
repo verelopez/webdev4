@@ -3,24 +3,301 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>jQuery Mobile</title>
+	<title>Wirecutter Mobile</title>
 	<link rel="stylesheet"  href="css/jquery.mobile-1.1.0.css" />
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.mobile-1.1.0.js"></script>
+	<link rel="stylesheet" href="my.css" />
 </head>
 <body>
-<div data-role="page" id="page-home">
-	<div data-role="header" data-position="fixed">
-		<h1>Wirecutter</h1>
-	</div>
 
-	<div data-role="content">
-		<p>Sample Data</p>
-	</div>
-
-	<div data-role="footer" data-position="fixed">
-		<p>&copy; 2011-12 All Right Reserved.</p>
-	</div>
-</div>
-</body>
+    	<!------------ START Page1 ------------->
+        <div data-role="page" id="page1">
+            <div  data-role="header" class="header">
+                <h3 class="logo">
+                </h3>
+            </div><!-- End Page1 Header -->
+            
+            <div data-role="content" class="content">
+            	 <div data-role="navbar" class="topNav" data-iconpos="top">
+                    <ul >
+                        <li>
+                            <a href="#page1" data-theme="" data-icon="">
+                                New
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page1" data-theme="" data-icon="">
+                                Popular
+                            </a>
+                        </li>
+                    </ul>
+                </div> <!-- End Page1 Top Nav -->
+                
+                <h3>
+                    This Is the Power Laptop You Want
+                </h3>
+                <div style="width: 288px; height: 165px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+                    <img src="img/new-laptop.jpg" alt="image" style="position: absolute; " />
+                </div>
+                <h3>
+                    The Over-Ear Headphones I'd Get
+                </h3>
+                <div style="width: 288px; height: 165px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+					<img src="img/new-headphones.jpg" alt="image" style="position: absolute; " />
+			</div>
+                
+            </div> <!-- End Page1 Content -->
+              
+              <div data-role="footer">
+                	<div data-role="navbar" data-iconpos="top">
+                    	<ul>
+                        	<li>
+                            	<a href="#page1" data-theme="" data-icon="home">
+                                	Home
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a href="#page2" data-theme="" data-icon="info">
+                                	Category
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a href="#page1" data-theme="" data-icon="star">
+                                	Wish List
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a href="#page1" data-theme="" data-icon="search">
+                                	Serach
+                            	</a>
+                        	</li>
+                    	</ul>
+                	</div>
+                </div><!-- End Page1  Footer -->
+        
+        </div> <!-- End Page1 -->
+        
+        <!------------ START Page2 ------------->
+        <div data-role="page" id="page2">
+            <div  data-role="header" class="header">
+                <h3 class="logo">
+                </h3>
+            </div><!-- End Page1 Header -->
+            
+            <div data-role="content" class="content">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider"  class="red" role="heading">
+                        PRODUCT CATERGORY
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Home
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            TVs
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page3" data-transition="slide">
+                            Mobile Extras
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Storage
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Body
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Cameras
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Laptops
+                        </a>
+                    </li>
+                </ul>
+                
+            </div> <!-- END Pag2 Content -->
+            
+            <div data-role="footer">
+                	<div data-role="navbar" data-iconpos="top">
+                    	<ul>
+                        	<li>
+                            	<a href="#page1" data-theme="" data-icon="home">
+                                	Home
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a href="#page2" data-theme="" data-icon="info">
+                                	Category
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a href="#page1" data-theme="" data-icon="star">
+                                	Wish List
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a href="#page1" data-theme="" data-icon="search">
+                                	Serach
+                            	</a>
+                        	</li>
+                    	</ul>
+                	</div>
+                </div><!-- End Page2  Footer -->
+            
+            </div> <!-- End Page2 -->
+        
+        <!------------ START Page3 ------------->
+      
+        <div data-role="page" id="page3">
+                 <div  data-role="header" class="header">
+                	<a  href="#page2"  data-role="button" data-transition="fade" data-theme="c" data-icon="back" data-iconpos="left">
+                   	 Back
+                	</a>
+                	<h3 class="logo"></h3>
+            </div><!-- End Page3  Header-->
+            
+            <div data-role="content" class="content">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        MOBILE EXTRAS
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                           Drawing Stylus
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Bluetooth Headset
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            iPhone Battery Case
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Earbuds Under $30
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            iPhone 4 Case
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                           $100 Earbuds
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                            iPod Dock
+                        </a>
+                    </li>
+                </ul>
+            </div><!-- End Page2 Content -->
+        
+        	<div data-role="footer">
+                	<div data-role="navbar" data-iconpos="top">
+                    	<ul>
+                        	<li>
+                            	<a href="#page1" data-theme="" data-icon="home">
+                                	Home
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a href="#page2" data-theme="" data-icon="info">
+                                	Category
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a href="#page1" data-theme="" data-icon="star">
+                                	Wish List
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a href="#page1" data-theme="" data-icon="search">
+                                	Serach
+                            	</a>
+                        	</li>
+                    	</ul>
+                	</div>
+                </div><!-- End Page1  Footer -->
+         </div> <!-- End Page3 -->
+        
+        <!------------ START Page4 ------------->
+      
+        <div data-role="page" id="page4">
+                 <div  data-role="header" class="header">
+                	<a  href="#page3"  data-role="button" data-transition="fade" data-theme="c" data-icon="back" data-iconpos="left">
+                   	 Back
+                	</a>
+                	<h3 class="logo"></h3>
+            </div><!-- End Page2  Header-->
+            
+            <div data-role="content" class="content">
+                <h4>
+                   This Is the iPod Dock You Want
+                </h4>
+                <h5>
+                Logitech S715i
+                </h5>
+                <div style="width: 288px; height: 185px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
+                    <img src="img/ipoddock.jpg" alt="image" style="position: absolute; " />
+                </div>
+                <p>
+                	Logitech’s S715i is the dock to get. Every gadget reviewer we talked to who has tested the S715i seems to be infatuated with it.It sounds great and includes rechargeable batteries, so you can lug it to the beach. It also includes an infrared remote for volume, power, shuffle, repeat and track changing.
+                </p>
+                <a data-role="button" data-transition="fade" data-theme="b" href="http://www.amazon.com/gp/product/B003VANOI6/ref=as_li_ss_tl?ie=UTF8&tag=thewire06-20&linkCode=as2&camp=217145&creative=399369&creativeASIN=B003VANOI6">
+                    $120 Buy On Amazom
+                </a>
+            </div> <!-- END Page 4 Content -->
+            
+            <div data-role="footer">
+                	<div data-role="navbar" data-iconpos="top">
+                    	<ul>
+                        	<li>
+                            	<a href="#page1" data-theme="" data-icon="home">
+                                	Home
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a href="#page2" data-theme="" data-icon="info">
+                                	Category
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a href="#page1" data-theme="" data-icon="star">
+                                	Wish List
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a href="#page1" data-theme="" data-icon="search">
+                                	Serach
+                            	</a>
+                        	</li>
+                    	</ul>
+                	</div>
+                </div><!-- End Page1  Footer -->
+            
+        </div> <!-- End Page4 -->
+        
+        <script>
+            //App custom javascript
+        </script>
+    </body>
 </html>

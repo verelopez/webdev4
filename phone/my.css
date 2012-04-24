@@ -1,0 +1,31 @@
+.text-align-center {
+  text-align: center;
+}
+.text-align-right {
+  text-align: right;
+}
+.header {
+background: url(img/bg_dark.jpg) repeat-x;
+border-bottom: 1px solid #B49F8B;
+height: 50px;
+
+}
+.logo {
+background: url(img/logo.png) no-repeat;
+height: 46px;
+}
+.content {
+	background: url(img/bg_light.jpg);
+}
+.ui-btn-active {
+border: 1px solid #009da6;
+background: #00757c;
+}
+.topNav  {
+	color: #ffc82c;
+}
+.ui-bar-b {
+border: 1px solid #deae25;
+background: #ffc82c;
+text-shadow: 0 1px 1px #000000;
+)
