@@ -4,100 +4,103 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Wirecutter Mobile</title>
-	<link rel="stylesheet"  href="css/jquery.mobile-1.1.0.css" />
+	<link rel="stylesheet" href="css/themes/wirecutter.min.css" />
+	<link rel="stylesheet"  href="css/jquery.mobile.structure-1.1.0.css" />
+	<link rel="stylesheet" href="css/my.css" />
+	
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.mobile-1.1.0.js"></script>
-	<link rel="stylesheet" href="my.css" />
+	
 </head>
 <body>
 
     	<!------------ START Page1 ------------->
-        <div data-role="page" id="page1">
-            <div  data-role="header" class="header">
-                <h3 class="logo">
-                </h3>
+        <div data-role="page" id="home" data-theme="b">
+            <div  data-role="header"  data-position="fixed">
+                <h1 class="logo">Wirecutter</h1>
             </div><!-- End Page1 Header -->
             
+      
             <div data-role="content" class="content">
-            	 <div data-role="navbar" class="topNav" data-iconpos="top">
+            	 <div data-role="navbar">
                     <ul >
                         <li>
-                            <a href="#page1" data-theme="" data-icon="">
+                            <a href="#" data-theme="a" >
                                 New
                             </a>
                         </li>
                         <li>
-                            <a href="#page1" data-theme="" data-icon="">
+                            <a href="#" data-theme="a">
                                 Popular
                             </a>
                         </li>
                     </ul>
                 </div> <!-- End Page1 Top Nav -->
                 
-                <h3>
-                    This Is the Power Laptop You Want
-                </h3>
-                <div style="width: 288px; height: 165px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
-                    <img src="img/new-laptop.jpg" alt="image" style="position: absolute; " />
-                </div>
-                <h3>
-                    The Over-Ear Headphones I'd Get
-                </h3>
-                <div style="width: 288px; height: 165px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
-					<img src="img/new-headphones.jpg" alt="image" style="position: absolute; " />
-			</div>
-                
-            </div> <!-- End Page1 Content -->
-              
-              <div data-role="footer">
+                <div class="intro">
+                	<h2>A List of Great Technology</h2>
+                		<h3>How To Use The Wirecutter</h3>
+                			<p>Gadget shopping can be difficult at times. But I think I can help.</p>
+                        <h4>How Do I Use Your Site?</h4>
+                        	<p>Pick the category of gadgets that you want to shop in, and then read the descriptions of our handful of choices. We've gone with high end, low end, and what we believe is just right.</p>
+                        <h4>What's the best way to find out when you've updated The Wirecutter?</h4>
+							<p>Browse through the New and Popular sections to see the latest and greatest gadgets.</p>
+                         <h4>How do you choose your gadgets?</h4>   
+                         	<p>I study materials put forth by gadget companies.  I talk to the best journalists who review gadgets. I take all the data I can find from their work and from around the web. And then I make up my mind. Sometimes I agree, other times I recommend a lower or higher tiered gadget depending on what I think most people will need.</p>
+                         <h4> What if the Kind of thing I want Isn't on your site?</h4>
+                         <p><a href="mailto:notes@thewirecutter.com">Email me</a> and let me know if you need some help figuring out a particular buying problem.</p>
+                       
+                </div> <!-- END INTRO-->
+            </div><!-- End Page1 Content -->
+            
+              <div data-role="footer"  data-position="fixed" data-theme="b">
                 	<div data-role="navbar" data-iconpos="top">
                     	<ul>
                         	<li>
-                            	<a href="#page1" data-theme="" data-icon="home">
+                            	<a href="#home" class="ui-btn-active" data-icon="home">
                                 	Home
                             	</a>
                         	</li>
                         	<li>
-                            	<a href="#page2" data-theme="" data-icon="info">
+                            	<a href="#category"  data-icon="info">
                                 	Category
                             	</a>
                         	</li>
                         	<li>
-                            	<a href="#page1" data-theme="" data-icon="star">
+                            	<a href="#" data-icon="star">
                                 	Wish List
                             	</a>
                         	</li>
                         	<li>
-                            	<a href="#page1" data-theme="" data-icon="search">
-                                	Serach
+                            	<a href="#" data-icon="search">
+                                	Search
                             	</a>
                         	</li>
                     	</ul>
                 	</div>
                 </div><!-- End Page1  Footer -->
-        
+
         </div> <!-- End Page1 -->
         
         <!------------ START Page2 ------------->
-        <div data-role="page" id="page2">
-            <div  data-role="header" class="header">
-                <h3 class="logo">
-                </h3>
+        <div data-role="page" id="category" data-theme="b">
+            <div  data-role="header" class="header"  data-position="fixed">
+                <h1 class="logo">Wirecutter</h1>
             </div><!-- End Page1 Header -->
             
-            <div data-role="content" class="content">
-                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+            <div data-role="content" class="content" >
+                <ul data-role="listview" data-divider-theme="c" data-inset="true">
                     <li data-role="list-divider"  class="red" role="heading">
-                        PRODUCT CATERGORY
+                        PRODUCT CATEGORY
                     </li>
                     <li data-theme="c">
-                        <a href="#page1" data-transition="slide">
+                        <a href="#" data-transition="slide">
                             Home
                         </a>
                     </li>
                     <li data-theme="c">
-                        <a href="#page1" data-transition="slide">
-                            TVs
+                        <a href="#" data-transition="slide"> 
+                              TVs
                         </a>
                     </li>
                     <li data-theme="c">
@@ -106,50 +109,110 @@
                         </a>
                     </li>
                     <li data-theme="c">
-                        <a href="#page1" data-transition="slide">
+                        <a href="#" data-transition="slide">
                             Storage
                         </a>
                     </li>
                     <li data-theme="c">
-                        <a href="#page1" data-transition="slide">
+                        <a href="#" data-transition="slide">
                             Body
                         </a>
                     </li>
                     <li data-theme="c">
-                        <a href="#page1" data-transition="slide">
+                        <a href="#" data-transition="slide">
                             Cameras
                         </a>
                     </li>
                     <li data-theme="c">
-                        <a href="#page1" data-transition="slide">
+                        <a href="#" data-transition="slide">
                             Laptops
+                        </a>
+                    </li>
+                       <li data-theme="c">
+                        <a href="#" data-transition="slide">
+                            Headphones
+                        </a>
+                    </li>
+                       <li data-theme="c">
+                        <a href="#" data-transition="slide">
+                            Smartphones
+                        </a>
+                    </li>
+                       <li data-theme="c">
+                        <a href="#" data-transition="slide">
+                            Theater Audio
+                        </a>
+                    </li>
+                       <li data-theme="c">
+                        <a href="#" data-transition="slide">
+                            Theater Extras
+                        </a>
+                    </li>
+                       <li data-theme="c">
+                        <a href="#" data-transition="slide">
+                            Projectors
+                        </a>
+                    </li>
+                       <li data-theme="c">
+                        <a href="#" data-transition="slide">
+                            Home Music
+                        </a>
+                    </li>
+                       <li data-theme="c">
+                        <a href="#" data-transition="slide">
+                            Computer Etc
+                        </a>
+                    </li>
+                       <li data-theme="c">
+                        <a href="#" data-transition="slide">
+                            Networking
+                        </a>
+                    </li>
+                       <li data-theme="c">
+                        <a href="#" data-transition="slide">
+                            Printers
+                        </a>
+                    </li>
+                       <li data-theme="c">
+                        <a href="#" data-transition="slide">
+                            Tablets
+                        </a>
+                    </li>
+                       <li data-theme="c">
+                        <a href="#" data-transition="slide">
+                            Car Stuff
+                        </a>
+                    </li>
+                       <li data-theme="c">
+                        <a href="#" data-transition="slide">
+                           Cables
                         </a>
                     </li>
                 </ul>
                 
             </div> <!-- END Pag2 Content -->
             
-            <div data-role="footer">
+           <div data-role="footer"  data-position="fixed" data-theme="b">
                 	<div data-role="navbar" data-iconpos="top">
                     	<ul>
                         	<li>
-                            	<a href="#page1" data-theme="" data-icon="home">
+                            	<a href="#home" class="ui-btn-active" data-icon="home">
                                 	Home
                             	</a>
                         	</li>
                         	<li>
-                            	<a href="#page2" data-theme="" data-icon="info">
+                            	<a href="#category"  data-icon="info">
                                 	Category
                             	</a>
                         	</li>
                         	<li>
-                            	<a href="#page1" data-theme="" data-icon="star">
+                            	<a href="#page1" data-icon="star">
                                 	Wish List
                             	</a>
                         	</li>
                         	<li>
-                            	<a href="#page1" data-theme="" data-icon="search">
-                                	Serach
+                            	<a href="#page1" data-icon="search">
+                                	Search
                             	</a>
                         	</li>
                     	</ul>
@@ -160,134 +223,164 @@
         
         <!------------ START Page3 ------------->
       
-        <div data-role="page" id="page3">
-                 <div  data-role="header" class="header">
-                	<a  href="#page2"  data-role="button" data-transition="fade" data-theme="c" data-icon="back" data-iconpos="left">
-                   	 Back
-                	</a>
-                	<h3 class="logo"></h3>
+        <div data-role="page" id="page3" data-theme="b">
+                 <div  data-role="header" data-position="fixed">
+                	<h1 class="logo">Wirecutter</h1>
+                	
+                	<a  href="#page2"  data-role="button" data-transition="fade"  data-icon="search" data-iconpos="right">Search</a>
             </div><!-- End Page3  Header-->
             
-            <div data-role="content" class="content">
-                <ul data-role="listview" data-divider-theme="b" data-inset="true">
-                    <li data-role="list-divider" role="heading">
-                        MOBILE EXTRAS
-                    </li>
-                    <li data-theme="c">
+             <div data-role="content" class="content">
+                <div data-role="collapsible-set" data-theme="" data-content-theme="">
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h3>
+                            <img src="img/icon-house.png" /> Home
+                        </h3>
+                         <ul data-role="listview" data-divider-theme="" >
+                 
+                    <li data-theme="a">
                         <a href="#page1" data-transition="slide">
                            Drawing Stylus
                         </a>
                     </li>
-                    <li data-theme="c">
+                    <li data-theme="a">
                         <a href="#page1" data-transition="slide">
                             Bluetooth Headset
                         </a>
                     </li>
-                    <li data-theme="c">
+                    <li data-theme="a">
                         <a href="#page1" data-transition="slide">
                             iPhone Battery Case
                         </a>
                     </li>
-                    <li data-theme="c">
+                    <li data-theme="a">
                         <a href="#page1" data-transition="slide">
                             Earbuds Under $30
                         </a>
                     </li>
-                    <li data-theme="c">
+                    <li data-theme="a">
                         <a href="#page1" data-transition="slide">
                             iPhone 4 Case
                         </a>
                     </li>
-                    <li data-theme="c">
+                    <li data-theme="a">
                         <a href="#page1" data-transition="slide">
                            $100 Earbuds
                         </a>
                     </li>
-                    <li data-theme="c">
+                    <li data-theme="a">
                         <a href="#page4" data-transition="slide">
                             iPod Dock
                         </a>
                     </li>
                 </ul>
-            </div><!-- End Page2 Content -->
+
+                    </div>
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h3>
+                            TVs
+                        </h3>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h3>
+                            Mobile Extras
+                        </h3>
+                    </div>
+                </div>
+            </div><!-- End Page3 Content -->
         
-        	<div data-role="footer">
+        	<div data-role="footer"  data-position="fixed" data-theme="b">
                 	<div data-role="navbar" data-iconpos="top">
                     	<ul>
                         	<li>
-                            	<a href="#page1" data-theme="" data-icon="home">
+                            	<a href="#home" class="ui-btn-active" data-icon="home">
                                 	Home
                             	</a>
                         	</li>
                         	<li>
-                            	<a href="#page2" data-theme="" data-icon="info">
+                            	<a href="#category"  data-icon="info">
                                 	Category
                             	</a>
                         	</li>
                         	<li>
-                            	<a href="#page1" data-theme="" data-icon="star">
+                            	<a href="#" data-icon="star">
                                 	Wish List
                             	</a>
                         	</li>
                         	<li>
-                            	<a href="#page1" data-theme="" data-icon="search">
-                                	Serach
+                            	<a href="#" data-icon="search">
+                                	Search
                             	</a>
                         	</li>
                     	</ul>
                 	</div>
-                </div><!-- End Page1  Footer -->
+                </div><!-- End Page3  Footer -->
+                
          </div> <!-- End Page3 -->
         
         <!------------ START Page4 ------------->
       
-        <div data-role="page" id="page4">
-                 <div  data-role="header" class="header">
+        <div data-role="page" id="page4" data-theme="b">
+                 <div  data-role="header" data-position="fixed">
                 	<a  href="#page3"  data-role="button" data-transition="fade" data-theme="c" data-icon="back" data-iconpos="left">
                    	 Back
                 	</a>
-                	<h3 class="logo"></h3>
+                	<h1 class="logo">Wirecutter</h1>
             </div><!-- End Page2  Header-->
             
             <div data-role="content" class="content">
-                <h4>
-                   This Is the iPod Dock You Want
-                </h4>
-                <h5>
-                Logitech S715i
-                </h5>
-                <div style="width: 288px; height: 185px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;">
-                    <img src="img/ipoddock.jpg" alt="image" style="position: absolute; " />
+                <div class="prod-title">
+                	<h4>
+                   		This Is the iPod Dock You Want
+               		 </h4>
+                	<h5>
+               			 Logitech S715i
+                	</h5>
                 </div>
-                <p>
-                	Logitech’s S715i is the dock to get. Every gadget reviewer we talked to who has tested the S715i seems to be infatuated with it.It sounds great and includes rechargeable batteries, so you can lug it to the beach. It also includes an infrared remote for volume, power, shuffle, repeat and track changing.
-                </p>
-                <a data-role="button" data-transition="fade" data-theme="b" href="http://www.amazon.com/gp/product/B003VANOI6/ref=as_li_ss_tl?ie=UTF8&tag=thewire06-20&linkCode=as2&camp=217145&creative=399369&creativeASIN=B003VANOI6">
-                    $120 Buy On Amazom
+                
+                <div class="prodContainer">
+                    <img src="img/ipoddock.jpg" alt="image" width="100%" />
+                    <h6>Key Specs</h6>
+                    <ul class="specs"> 	
+                    	<li><span>Sound:</span> Stereo speakers</li>
+                    	<li><span>Size (Width, height):</span> 5 inches, 3.2 inches</li>
+                    	<li><span>Weight:</span> 1 pound</li>
+                    	<li><span>Compatibility:</span> iPhone, iPod </li>
+                    	<li><span>Battery life:</span> 10-hour rechargeable internal battery</li>   
+                    </ul>
+                </div>
+                
+                 <a data-role="button" data-transition="fade" data-theme="b" href="http://www.amazon.com/gp/product/B003VANOI6/ref=as_li_ss_tl?ie=UTF8&tag=thewire06-20&linkCode=as2&camp=217145&creative=399369&creativeASIN=B003VANOI6">
+                    Buy On Amazom
                 </a>
+                
+                <p class="prodDescrp">
+                	Logitech’s S715i is the dock to get. Every gadget reviewer we talked to who has tested the S715i seems to be infatuated with it.It sounds great and includes rechargeable batteries, so you can lug it to the beach. It also includes an infrared remote for volume, power, shuffle, repeat and track changing.
+               </p>
+               
             </div> <!-- END Page 4 Content -->
             
-            <div data-role="footer">
+            <div data-role="footer"  data-position="fixed" data-theme="b">
                 	<div data-role="navbar" data-iconpos="top">
                     	<ul>
                         	<li>
-                            	<a href="#page1" data-theme="" data-icon="home">
+                            	<a href="#home" class="ui-btn-active" data-icon="home">
                                 	Home
                             	</a>
                         	</li>
                         	<li>
-                            	<a href="#page2" data-theme="" data-icon="info">
+                            	<a href="#category"  data-icon="info">
                                 	Category
                             	</a>
                         	</li>
                         	<li>
-                            	<a href="#page1" data-theme="" data-icon="star">
+                            	<a href="#" data-icon="star">
                                 	Wish List
                             	</a>
                         	</li>
                         	<li>
-                            	<a href="#page1" data-theme="" data-icon="search">
-                                	Serach
+                            	<a href="#" data-icon="search">
+                                	Search
                             	</a>
                         	</li>
                     	</ul>
