@@ -7,35 +7,49 @@
 	<link rel="stylesheet" href="css/themes/wirecutter.min.css" />
 	<link rel="stylesheet"  href="css/jquery.mobile.structure-1.1.0.css" />
 	<link rel="stylesheet" href="css/my.css" />
+	<link rel="stylesheet"  href="jqm-icon-pack-1.1.1-original.css" />
 	
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.mobile-1.1.0.js"></script>
 	
 </head>
 <body>
-
-    	<!------------ START Page1 ------------->
+		<!------------ START HOME ------------->
         <div data-role="page" id="home" data-theme="b">
             <div  data-role="header"  data-position="fixed">
                 <h1 class="logo">Wirecutter</h1>
+                
             </div><!-- End Page1 Header -->
             
       
             <div data-role="content" class="content">
-            	 <div data-role="navbar">
-                    <ul >
-                        <li>
-                            <a href="#" data-theme="a" >
-                                New
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" data-theme="a">
-                                Popular
-                            </a>
-                        </li>
-                    </ul>
-                </div> <!-- End Page1 Top Nav -->
+            	<nav>
+            		<ul class="homeNav">
+            			<li><a href="#category"><img src="img/List-Icon.png" />CATEGORY</a></li>
+            			<li><a href="#"><img src="img/Star-Icon.png" />WISHLIST</a></li>
+            			<li><a href="#"><img src="img/Page-Icon.png" />PRODUCTS</a></li>
+            			<li><a href="#home"><img src="img/Search-Icon.png" /> SEARCH</a></li>
+            		</ul>
+            	</nav>
+                
+                <h2 class="about"><a href="#about">How To Use The Wirecutter</a></h2>
+            </div><!-- End Page1 Content -->
+            
+        </div> <!-- End HOME -->
+
+    	<!------------ START ABOUT------------->
+        <div data-role="page" id="about" data-theme="b">
+            <div  data-role="header"  data-position="fixed">
+                <h1 class="logo">Wirecutter</h1>
+                	<a  href="#"  data-role="button" data-transition="fade" data-icon="back" data-rel="back" data-iconpos="notext">
+                   	 Back
+                	</a>
+                <a  href="#home"  data-role="button" data-transition="fade"  data-icon="home" data-iconpos="notext" class="ui-btn-right">Home</a>
+            </div><!-- End Page1 Header -->
+            
+      
+            <div data-role="content" class="content">
+            	
                 
                 <div class="intro">
                 	<h2>A List of Great Technology</h2>
@@ -44,7 +58,7 @@
                         <h4>How Do I Use Your Site?</h4>
                         	<p>Pick the category of gadgets that you want to shop in, and then read the descriptions of our handful of choices. We've gone with high end, low end, and what we believe is just right.</p>
                         <h4>What's the best way to find out when you've updated The Wirecutter?</h4>
-							<p>Browse through the New and Popular sections to see the latest and greatest gadgets.</p>
+							<p>Browse through the Products sections to see the latest and greatest gadgets.</p>
                          <h4>How do you choose your gadgets?</h4>   
                          	<p>I study materials put forth by gadget companies.  I talk to the best journalists who review gadgets. I take all the data I can find from their work and from around the web. And then I make up my mind. Sometimes I agree, other times I recommend a lower or higher tiered gadget depending on what I think most people will need.</p>
                          <h4> What if the Kind of thing I want Isn't on your site?</h4>
@@ -57,18 +71,18 @@
                 	<div data-role="navbar" data-iconpos="top">
                     	<ul>
                         	<li>
-                            	<a href="#home" class="ui-btn-active" data-icon="home">
-                                	Home
-                            	</a>
-                        	</li>
-                        	<li>
-                            	<a href="#category"  data-icon="info">
+                            	<a href="#category"  data-icon="grid">
                                 	Category
                             	</a>
                         	</li>
                         	<li>
                             	<a href="#" data-icon="star">
                                 	Wish List
+                            	</a>
+                        	</li>
+                        	<li>
+                            	<a href="#" data-icon="page">
+                                	Products
                             	</a>
                         	</li>
                         	<li>
@@ -80,225 +94,462 @@
                 	</div>
                 </div><!-- End Page1  Footer -->
 
-        </div> <!-- End Page1 -->
+        </div> <!-- End ABOUT -->
         
-        <!------------ START Page2 ------------->
+        <!------------ START CATEGORY ------------->
         <div data-role="page" id="category" data-theme="b">
             <div  data-role="header" class="header"  data-position="fixed">
                 <h1 class="logo">Wirecutter</h1>
-            </div><!-- End Page1 Header -->
+                
+                   	<a  href="#"  data-role="button" data-transition="fade" data-icon="back" data-rel="back" data-iconpos="notext">
+                   	 Back
+                	</a>
+                	
+                <a  href="#home"  data-role="button" data-transition="fade"  data-icon="home" data-iconpos="notext" class="ui-btn-right">Home</a>
+            </div><!-- End CATEGORY Header -->
             
-            <div data-role="content" class="content" >
-                <ul data-role="listview" data-divider-theme="c" data-inset="true">
-                    <li data-role="list-divider"  class="red" role="heading">
-                        PRODUCT CATEGORY
-                    </li>
-                    <li data-theme="c">
-                        <a href="#" data-transition="slide">
-                            Home
+           <div data-role="content" class="content">
+
+	         	<h2 class="listTitle">PRODUCT CATEGORY</h2>
+                    
+            <div data-role="collapsible-set" data-theme="a" class="list">
+                    
+                    <div data-role="collapsible" data-collapsed="true" data-content-theme="b" data-iconpos="right">
+                        <h3 class="icon">
+                            <img src="img/icon-house.png" /> HOME
+                        </h3>
+                         <ul data-role="listview" data-divider-theme="" >
+                 
+                    <li data-theme="b">
+                        <a href="#page4" data-transition="slide">
+                           A Great Drill For Around The House
                         </a>
                     </li>
-                    <li data-theme="c">
-                        <a href="#" data-transition="slide"> 
-                              TVs
+                    <li data-theme="b">
+                        <a href="#page4" data-transition="slide">
+                            Best Cheap Portable Vaporizer
                         </a>
                     </li>
-                    <li data-theme="c">
-                        <a href="#page3" data-transition="slide">
-                            Mobile Extras
+                    <li data-theme="b">
+                        <a href="#page4" data-transition="slide">
+                           Best LED Lightbulb
                         </a>
                     </li>
-                    <li data-theme="c">
-                        <a href="#" data-transition="slide">
-                            Storage
+                    <li data-theme="b">
+                        <a href="#page4" data-transition="slide">
+                            The Rechargeble Batteries I'd Buy
                         </a>
                     </li>
-                    <li data-theme="c">
-                        <a href="#" data-transition="slide">
-                            Body
+                    <li data-theme="b">
+                        <a href="#page4" data-transition="slide">
+                           The Best Juicer
                         </a>
                     </li>
-                    <li data-theme="c">
-                        <a href="#" data-transition="slide">
-                            Cameras
+                    <li data-theme="b">
+                        <a href="#page4" data-transition="slide">
+                           The Best Handheld Vacuum
                         </a>
                     </li>
-                    <li data-theme="c">
-                        <a href="#" data-transition="slide">
-                            Laptops
-                        </a>
-                    </li>
-                       <li data-theme="c">
-                        <a href="#" data-transition="slide">
-                            Headphones
-                        </a>
-                    </li>
-                       <li data-theme="c">
-                        <a href="#" data-transition="slide">
-                            Smartphones
-                        </a>
-                    </li>
-                       <li data-theme="c">
-                        <a href="#" data-transition="slide">
-                            Theater Audio
-                        </a>
-                    </li>
-                       <li data-theme="c">
-                        <a href="#" data-transition="slide">
-                            Theater Extras
-                        </a>
-                    </li>
-                       <li data-theme="c">
-                        <a href="#" data-transition="slide">
-                            Projectors
-                        </a>
-                    </li>
-                       <li data-theme="c">
-                        <a href="#" data-transition="slide">
-                            Home Music
-                        </a>
-                    </li>
-                       <li data-theme="c">
-                        <a href="#" data-transition="slide">
-                            Computer Etc
-                        </a>
-                    </li>
-                       <li data-theme="c">
-                        <a href="#" data-transition="slide">
-                            Networking
-                        </a>
-                    </li>
-                       <li data-theme="c">
-                        <a href="#" data-transition="slide">
-                            Printers
-                        </a>
-                    </li>
-                       <li data-theme="c">
-                        <a href="#" data-transition="slide">
-                            Tablets
-                        </a>
-                    </li>
-                       <li data-theme="c">
-                        <a href="#" data-transition="slide">
-                            Car Stuff
-                        </a>
-                    </li>
-                       <li data-theme="c">
-                        <a href="#" data-transition="slide">
-                           Cables
+                    <li data-theme="b">
+                        <a href="#page4" data-transition="slide">
+                            A Solid Vacuum Cleaner
                         </a>
                     </li>
                 </ul>
+                    </div><!-- End HOME -->
+                    
+                     <div data-role="collapsible" data-collapsed="true" data-content-theme="c" data-iconpos="right">
+                        <h3 class="icon">
+                            <img src="img/icon-tvs.png" /> TVS
+                        </h3>
+                         <ul data-role="listview" data-divider-theme="" >
+                 
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                           The Best TV (For Now)
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                            A Great Small TV
+                        </a>
+                    </li>
+                </ul>
+                    </div><!-- End TVS -->
+                    
+                    <div data-role="collapsible" data-collapsed="true" data-content-theme="c" data-iconpos="right">
+                        <h3 class="icon">
+                            <img src="img/icon-mobile.png" /> MOBILE EXTRAS
+                        </h3>
+                         <ul data-role="listview" data-divider-theme="" >
+                 
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                           Best iPad Keyboard Case
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                            Best Cheap Portable Vaporizer
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                          Not-Horrible iPad Case
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                            The iPad Keyboard I Use
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                           Best Wirless Speaker
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                           A Great Wireless Speaker 
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                            Best Wi-fi Hotspot
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                            The Best Drawing Stylus For Your Tablet
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                            A Great Bluetooth Headset
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                            Best Earbuds Under $30
+                        </a>
+                    </li>
+                     <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                            The Best $100 Earbuds
+                        </a>
+                    </li>
+                     <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                            Best iPhone Battery Case
+                        </a>
+                    </li>
+                     <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                            The iPhone 4 Case I'd Get
+                        </a>
+                    </li>
+                </ul>
+                    </div><!-- End MOBILE -->
+                    
+                     <div data-role="collapsible" data-collapsed="true" data-content-theme="c" data-iconpos="right">
+                        <h3 class="icon">
+                            <img src="img/icon-storage.png" /> STORAGE
+                        </h3>
+                         <ul data-role="listview" data-divider-theme="" >
+                 
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                          The Best USB Flash Drive
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                            The Network-Attached Storage Drive I'd Get
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                           Favorite External Drive
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                            Best Portable Hard Drive
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                           The Best Cheap External Drive
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                           The Best Online Backup Service 
+                        </a>
+                    </li>
+                </ul>
+                    </div><!-- End STORAGE -->
+                    
+                    <div data-role="collapsible" data-collapsed="true" data-content-theme="c" data-iconpos="right">
+                        <h3 class="icon">
+                            <img src="img/icon-body.png" /> BODY
+                        </h3>
+                         <ul data-role="listview" data-divider-theme="" >
+                 
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                          Best Cheap Portable Vaporizer
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                            The Best Juicer
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                           A Great Beard Trimmer
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                            The Best Fitness Watch For Most Runners
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                           The Best Electric Toothbrush
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                           The Best Electric Shaver 
+                        </a>
+                    </li>
+                </ul>
+                    </div><!-- End BODY -->
+                    
+                    <div data-role="collapsible" data-collapsed="true" data-content-theme="c" data-iconpos="right">
+                        <h3 class="icon">
+                            <img src="img/icon-cameras.png" /> CAMERAS                      </h3>
+                         <ul data-role="listview" data-divider-theme="" >
+                 
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                          This Is The Sports Camera You Want 
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                            The Canon S100 Is The Best Damn Point-and-shoot Period
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                           The Best Camera For Under 100 Bucks
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                            The Budget DSLR Camera 
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                           A Great Mid Range DSLR
+                        </a>
+                    </li>
+                </ul>
+                    </div><!-- End CAMERAS -->
+                    
+                	<div data-role="collapsible" data-collapsed="true" data-content-theme="c" data-iconpos="right">
+                        <h3 class="icon">
+                            <img src="img/icon-laptops.png" /> LAPTOPS
+                        </h3>
+                         <ul data-role="listview" data-divider-theme="" >
+                 
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                          The Best Laptop Ever Created
+                        </a>
+                    </li>
+                </ul>
+                    </div><!-- End LAPTOPS -->
+                    
+                    <div data-role="collapsible" data-collapsed="true" data-content-theme="c" data-iconpos="right">
+                        <h3 class="icon">
+                            <img src="img/icon-headphones.png" /> HEADPHONES
+                        </h3>
+                         <ul data-role="listview" data-divider-theme="" >
+                 
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                          Best Sub-$30 Earbuds
+                        </a>
+                    </li>
+                </ul>
+                    </div><!-- End HEADPHONES -->
+                    
+                    <div data-role="collapsible" data-collapsed="true" data-content-theme="c" data-iconpos="right">
+                        <h3 class="icon">
+                            <img src="img/icon-smartphones.png" /> SMARTPHONES
+                        </h3>
+                         <ul data-role="listview" data-divider-theme="" >
+                 
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                          The Best Android Phone
+                        </a>
+                    </li>
+                </ul>
+                    </div><!-- End SMARTPHONE -->
+                    
+                    <div data-role="collapsible" data-collapsed="true" data-content-theme="c" data-iconpos="right">
+                        <h3 class="icon">
+                            <img src="img/icon-theater.png" /> THEATER AUDIO
+                        </h3>
+                         <ul data-role="listview" data-divider-theme="" >
+                 
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                          A Good HTIB
+                        </a>
+                    </li>
+                </ul>
+                    </div><!-- End THEATER AUDIO -->
+                    
+                    <div data-role="collapsible" data-collapsed="true" data-content-theme="c" data-iconpos="right">
+                        <h3 class="icon">
+                            <img src="img/icon-theaterEx.png" /> THEATER EXTRAS
+                        </h3>
+                         <ul data-role="listview" data-divider-theme="" >
+                 
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                          Best Universal Remote
+                        </a>
+                    </li>
+                </ul>
+                    </div><!-- End THEATER EXTRAS -->
+                    
+                    <div data-role="collapsible" data-collapsed="true" data-content-theme="c" data-iconpos="right">
+                        <h3 class="icon">
+                            <img src="img/icon-projectors.png" /> PROJECTOR
+                        </h3>
+                         <ul data-role="listview" data-divider-theme="" >
+                 
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                          A Good Projectore
+                        </a>
+                    </li>
+                </ul>
+                    </div><!-- End PROJECTOR -->
+                	
+                	<div data-role="collapsible" data-collapsed="true" data-content-theme="c" data-iconpos="right">
+                        <h3 class="icon">
+                            <img src="img/icon-music.png" /> MUSIC
+                        </h3>
+                         <ul data-role="listview" data-divider-theme="" >
+                 
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                          Best Wirless Speakers
+                        </a>
+                    </li>
+                </ul>
+                    </div><!-- End MUSIC -->
+                    
+                    <div data-role="collapsible" data-collapsed="true" data-content-theme="c" data-iconpos="right">
+                        <h3 class="icon">
+                            <img src="img/icon-theater.png" /> COMPUTER ETC                       </h3>
+                         <ul data-role="listview" data-divider-theme="" >
+                 
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                          A Great Monitor
+                        </a>
+                    </li>
+                </ul>
+                    </div><!-- End COMPUTER ETC -->
+                    
+                     <div data-role="collapsible" data-collapsed="true" data-content-theme="c" data-iconpos="right">
+                        <h3 class="icon">
+                            <img src="img/icon-networking.png" /> NETWORKING                       </h3>
+                         <ul data-role="listview" data-divider-theme="" >
+                 
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                          The Wi-Fi Router You Want
+                        </a>
+                    </li>
+                </ul>
+                    </div><!-- End NETWORKING -->
+                    
+                      <div data-role="collapsible" data-collapsed="true" data-content-theme="c" data-iconpos="right">
+                        <h3 class="icon">
+                            <img src="img/icon-printer.png" /> PRINTERS                       </h3>
+                         <ul data-role="listview" data-divider-theme="" >
+                 
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                          Best Cheap Laser Printer
+                        </a>
+                    </li>
+                </ul>
+                    </div><!-- End PRINTERS -->
+                    
+                      <div data-role="collapsible" data-collapsed="true" data-content-theme="c" data-iconpos="right">
+                        <h3 class="icon">
+                            <img src="img/icon-tablets.png" /> TABLETS                       </h3>
+                         <ul data-role="listview" data-divider-theme="" >
+                 
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                          Best Cheap Tablet
+                        </a>
+                    </li>
+                </ul>
+                    </div><!-- End TABLETS -->
+                    
+                      <div data-role="collapsible" data-collapsed="true" data-content-theme="c" data-iconpos="right">
+                        <h3 class="icon">
+                            <img src="img/icon-car.png" /> CAR STUFF                       </h3>
+                         <ul data-role="listview" data-divider-theme="" >
+                 
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                          FM Transmitter
+                        </a>
+                    </li>
+                </ul>
+                    </div><!-- End CAR STUFF -->
+                    
+                      <div data-role="collapsible" data-collapsed="true" data-content-theme="c" data-iconpos="right">
+                        <h3 class="icon">
+                            <img src="img/icon-cables.png" /> Cables                       </h3>
+                         <ul data-role="listview" data-divider-theme="" >
+                 
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                          My Favorite HDMI Cables
+                        </a>
+                    </li>
+                </ul>
+                    </div><!-- End CABLES -->
+                    
+                    
+                    
                 
-            </div> <!-- END Pag2 Content -->
+            </div><!-- End CATEFGORY Content -->
+            
+            </div> <!-- End CATEGORY CONTENT -->
             
            <div data-role="footer"  data-position="fixed" data-theme="b">
                 	<div data-role="navbar" data-iconpos="top">
                     	<ul>
                         	<li>
-                            	<a href="#home" class="ui-btn-active" data-icon="home">
-                                	Home
-                            	</a>
-                        	</li>
-                        	<li>
-                            	<a href="#category"  data-icon="info">
-                                	Category
-                            	</a>
-                        	</li>
-                        	<li>
-                            	<a href="#page1" data-icon="star">
-                                	Wish List
-                            	</a>
-                        	</li>
-                        	<li>
-                            	<a href="#page1" data-icon="search">
-                                	Search
-                            	</a>
-                        	</li>
-                    	</ul>
-                	</div>
-                </div><!-- End Page2  Footer -->
-            
-            </div> <!-- End Page2 -->
-        
-        <!------------ START Page3 ------------->
-      
-        <div data-role="page" id="page3" data-theme="b">
-                 <div  data-role="header" data-position="fixed">
-                	<h1 class="logo">Wirecutter</h1>
-                	
-                	<a  href="#page2"  data-role="button" data-transition="fade"  data-icon="search" data-iconpos="right">Search</a>
-            </div><!-- End Page3  Header-->
-            
-             <div data-role="content" class="content">
-                <div data-role="collapsible-set" data-theme="" data-content-theme="">
-                    <div data-role="collapsible" data-collapsed="true">
-                        <h3>
-                            <img src="img/icon-house.png" /> Home
-                        </h3>
-                         <ul data-role="listview" data-divider-theme="" >
-                 
-                    <li data-theme="a">
-                        <a href="#page1" data-transition="slide">
-                           Drawing Stylus
-                        </a>
-                    </li>
-                    <li data-theme="a">
-                        <a href="#page1" data-transition="slide">
-                            Bluetooth Headset
-                        </a>
-                    </li>
-                    <li data-theme="a">
-                        <a href="#page1" data-transition="slide">
-                            iPhone Battery Case
-                        </a>
-                    </li>
-                    <li data-theme="a">
-                        <a href="#page1" data-transition="slide">
-                            Earbuds Under $30
-                        </a>
-                    </li>
-                    <li data-theme="a">
-                        <a href="#page1" data-transition="slide">
-                            iPhone 4 Case
-                        </a>
-                    </li>
-                    <li data-theme="a">
-                        <a href="#page1" data-transition="slide">
-                           $100 Earbuds
-                        </a>
-                    </li>
-                    <li data-theme="a">
-                        <a href="#page4" data-transition="slide">
-                            iPod Dock
-                        </a>
-                    </li>
-                </ul>
-
-                    </div>
-                    <div data-role="collapsible" data-collapsed="true">
-                        <h3>
-                            TVs
-                        </h3>
-                    </div>
-                    <div data-role="collapsible" data-collapsed="true">
-                        <h3>
-                            Mobile Extras
-                        </h3>
-                    </div>
-                </div>
-            </div><!-- End Page3 Content -->
-        
-        	<div data-role="footer"  data-position="fixed" data-theme="b">
-                	<div data-role="navbar" data-iconpos="top">
-                    	<ul>
-                        	<li>
-                            	<a href="#home" class="ui-btn-active" data-icon="home">
-                                	Home
-                            	</a>
-                        	</li>
-                        	<li>
-                            	<a href="#category"  data-icon="info">
+                            	<a href="#category" class="ui-btn-active" data-icon="grid">
                                 	Category
                             	</a>
                         	</li>
@@ -308,25 +559,34 @@
                             	</a>
                         	</li>
                         	<li>
+                            	<a href="#" data-icon="page">
+                                	Products
+                            	</a>
+                        	</li>
+                        	<li>
                             	<a href="#" data-icon="search">
                                 	Search
                             	</a>
                         	</li>
                     	</ul>
                 	</div>
-                </div><!-- End Page3  Footer -->
-                
-         </div> <!-- End Page3 -->
+                </div><!-- End CATEGORY  Footer -->
+            
+            </div> <!-- End CATEGORY -->
+        
         
         <!------------ START Page4 ------------->
       
         <div data-role="page" id="page4" data-theme="b">
-                 <div  data-role="header" data-position="fixed">
-                	<a  href="#page3"  data-role="button" data-transition="fade" data-theme="c" data-icon="back" data-iconpos="left">
+            <div  data-role="header" class="header"  data-position="fixed">
+                <h1 class="logo">Wirecutter</h1>
+                
+                   	<a  href="#"  data-role="button" data-transition="fade" data-icon="back" data-rel="back" data-iconpos="notext">
                    	 Back
                 	</a>
-                	<h1 class="logo">Wirecutter</h1>
-            </div><!-- End Page2  Header-->
+                	
+                <a  href="#home"  data-role="button" data-transition="fade"  data-icon="home" data-iconpos="notext" class="ui-btn-right">Home</a>
+            </div><!-- End PROD PG Header -->
             
             <div data-role="content" class="content">
                 <div class="prod-title">
@@ -360,16 +620,11 @@
                
             </div> <!-- END Page 4 Content -->
             
-            <div data-role="footer"  data-position="fixed" data-theme="b">
+             <div data-role="footer"  data-position="fixed" data-theme="b">
                 	<div data-role="navbar" data-iconpos="top">
                     	<ul>
                         	<li>
-                            	<a href="#home" class="ui-btn-active" data-icon="home">
-                                	Home
-                            	</a>
-                        	</li>
-                        	<li>
-                            	<a href="#category"  data-icon="info">
+                            	<a href="#category" class="ui-btn-active" data-icon="grid">
                                 	Category
                             	</a>
                         	</li>
@@ -379,13 +634,18 @@
                             	</a>
                         	</li>
                         	<li>
+                            	<a href="#" data-icon="page">
+                                	Products
+                            	</a>
+                        	</li>
+                        	<li>
                             	<a href="#" data-icon="search">
                                 	Search
                             	</a>
                         	</li>
                     	</ul>
                 	</div>
-                </div><!-- End Page1  Footer -->
+                </div><!-- End PROD PG  Footer -->
             
         </div> <!-- End Page4 -->
         

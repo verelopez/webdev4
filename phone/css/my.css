@@ -12,30 +12,35 @@
 /* ---------HEADER---------- */
 .ui-header {
 	background: url(../img/bg_light.jpg) repeat-x;
-	xborder-bottom: 1px solid #B49F8B;
-	xheight: 54px;
+	border-bottom: 1px solid #B49F8B;
+	box-shadow: 0 0 5px 0 #888;
 }
+
 .ui-bar-a {
-border: none;
+	border: none;
 }
+
 .logo {
 	background: url(../img/logo.png) no-repeat top left;
-	width: 170px;
-	height: 46px;
+	width: 111px;
+	height: 30px;
 	text-indent: -9999em;
 }
 .ui-header .ui-title {
-	margin: 0.5em auto 0.2em;
+	margin: 0.5em auto 0.5em;
+}
+
+.ui-header .ui-btn {
+	margin-top: 4px;
 }
 
 /* ---------INTRO---------- */
 .intro h2 {
 	color: #6D8AA4;
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-shadow: 0 1px 0 #FFFFFF;
+    font-size: 18px;
     text-transform: uppercase;
-	margin-top: 1.5em;
+	margin-top: 0.5em;
 	text-align:center;
 }
 
@@ -43,22 +48,71 @@ border: none;
     color: #DF5341;
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 15px;
 	margin: 0;
 }
 
 .intro h4 {
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: bold;
 	margin: 0;
 }
 .intro p{
 	margin-top:0.3em;
-	font-size: 15px;	
+	font-size: 14px;	
+}
+
+/* ---------HOME---------- */
+.about a {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 0;
+	color: #DF5341 !important; 
+	text-align: center !important;
+}
+.homeNav {
+	width: 200px;
+	overflow: hidden;
+	margin: 32px auto 0 auto;
+	padding: 0;
+}
+.homeNav li {
+	list-style: none;
+	width: 79px;
+	float: left;
+	text-align: center;
+	padding: 0 10px 10px 10px;
+}
+.homeNav a {
+	color: #6D8AA4 !important; 
+	text-decoration: none;
+	font-size: 14px;
+	text-align: center;
+}
+
+/* ---------CATEGORY--------- */
+
+.icon img {
+	padding-right: 10px;
+}
+
+.listTitle {
+	color: #6D8AA4;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 55px;
+}
+.list ul li {
+	font-size: 15px;
 }
 
 /* ---------PRODUCT---------- */
+
 
 .prod-title h4 {
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
