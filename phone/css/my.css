@@ -97,8 +97,8 @@
 
 /* ---------CATEGORY--------- */
 
-.icon img {
-	padding-right: 10px;
+.icon img{
+	padding-right : 15px;
 }
 
 .listTitle {
@@ -172,10 +172,19 @@
 .wishList h3 {
 	margin: 0 0 0.5em 0;
 }
-.wishList img {
-	height: 58px;
+.wishList .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-thumb {
+	padding-left: 130px;
 }
-
+.wishList .ui-li-thumb {
+	max-width: 110px;
+}
+/* ---------SEARCH------------- */
+.searchList {
+	xmargin-top: 1.5em;
+}
+.space {
+	xmargin-top: 4.5em;
+}
 
 /* ---------ACTIVE COLOR---------- */
 .ui-btn-active.ui-btn-up-a {
