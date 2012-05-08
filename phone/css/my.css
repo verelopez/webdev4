@@ -107,7 +107,7 @@
 	font-size: 20px;
 	text-transform: uppercase;
 	text-align: center;
-	margin-top: 1em;
+	margin-top: 0.5em;
 }
 .list ul li {
 	font-size: 15px;
@@ -162,8 +162,19 @@
 .ui-collapsible {
 	margin: 1em 0px;
 }
-
-
+/* ---------WISH LIST------------- */
+.wishList {
+	padding-top: 1em;
+}
+.wishList ul li {
+	height: 60px;
+}
+.wishList h3 {
+	margin: 0 0 0.5em 0;
+}
+.wishList img {
+	height: 58px;
+}
 
 
 /* ---------ACTIVE COLOR---------- */
