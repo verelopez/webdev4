@@ -131,7 +131,6 @@
 	margin-bottom: 1.5em;
 	text-align: center;
 	color: #6D8AA4;
-	
 }
 .prodContainer {
  	width: 80%;
@@ -178,6 +177,49 @@
 .wishList .ui-li-thumb {
 	max-width: 110px;
 }
+
+/* ---------PRODUCTS------------- */
+.topNav {
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+}
+
+.prodBox {
+	width: 100%;
+	xmargin-left:5%;
+	margin-bottom: 20px;
+	background: #fff;
+	padding: 5px 0 5px 0;
+	box-shadow: 0 0 5px 0 #888;
+	-moz-box-shadow: 0 0 5px 0 #888;
+	-webkit-box-shadow: 0 0 5px 0 #888;
+	border-radius: 10px;
+}
+.prodBox img {
+	float:left;
+	padding-left: 10px;
+	padding-right: 20px;
+}
+.prodBox h3 {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+	margin-top: 0.5em;
+}
+.prodBox p {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0;
+	margin-top: 0.3em;
+	margin-bottom: 0.5em;
+	xtext-align: center;
+	color: #6D8AA4;
+}
+
+
+
 /* ---------SEARCH------------- */
 .searchList {
 	xmargin-top: 1.5em;
