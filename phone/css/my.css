@@ -14,6 +14,8 @@
 	background: url(../img/bg_light.jpg) repeat-x;
 	border-bottom: 1px solid #B49F8B;
 	box-shadow: 0 0 5px 0 #888;
+	-moz-box-shadow: 0 0 5px 0 #888;
+	-webkit-box-shadow: 0 0 5px 0 #888;
 }
 
 .ui-bar-a {
@@ -105,15 +107,13 @@
 	font-size: 20px;
 	text-transform: uppercase;
 	text-align: center;
-	margin-top: 55px;
+	margin-top: 1em;
 }
 .list ul li {
 	font-size: 15px;
 }
 
 /* ---------PRODUCT---------- */
-
-
 .prod-title h4 {
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 20px;
@@ -133,28 +133,16 @@
 	color: #6D8AA4;
 	
 }
-.prodContainer h6 {
-	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: 20px;
-	font-weight: normal;
-	text-transform: uppercase;
-	margin: 0;
-	margin-left: 0.6em;
-	margin-top: 0.6em;
-	color: #DF5341;
-}
 .prodContainer {
  	width: 80%;
  	margin-left:10%;
- 	margin-bottom: 2.5em;
+ 	margin-bottom: 2em;
  	border-radius: 10px;
- 	border: 1px solid     #cccccc  ;
-	background:      #ffffff      ;
+ 	border: 1px solid  #cccccc;
+	background: #ffffff;
 }
-
 .prodContainer img {
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+	border-radius: 10px;
 }
 .specs {
 	margin:0;
@@ -170,47 +158,10 @@
 .specs span {
  font-weight: bold;
 }
-.prodDescrp {
-	width: 75%;
-	margin: 0 auto;
-	margin-top: 1.5em;
-	margin-bottom: 1.5em;
+
+.ui-collapsible {
+	margin: 1em 0px;
 }
-
-
-ul.product-list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	width: 288px;
-}
-
-ul.product-list li {
-	margin: 2em 0;
-	padding: 0;
-	text-align: left;
-}
-
-ul.product-list a {
-	display: block;
-	text-decoration: none;
-}
-
-ul.product-list img {
-	border-radius: 5px;
-}
-
-ul.product-list h3 {
-	margin: 0;
-	padding: 0;
-
-}
-
-ul.product-list h4 {
-	margin: 0;
-	padding: 0;
-}
-
 
 
 
