@@ -39,7 +39,8 @@
 /* ---------INTRO---------- */
 .intro h2 {
 	color: #6D8AA4;
-	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-family: 'Cantarell', sans-serif;
+    font-weight: normal;
     font-size: 18px;
     text-transform: uppercase;
 	margin-top: 0.5em;
@@ -48,7 +49,8 @@
 
 .intro h3 {
     color: #DF5341;
-	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-family: 'Cantarell', sans-serif;
+    font-weight: normal;
 	text-transform: uppercase;
 	font-size: 15px;
 	margin: 0;
@@ -66,14 +68,18 @@
 }
 
 /* ---------HOME---------- */
+.about {
+	text-align: center !important;
+}
+
 .about a {
-	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-family: 'Cantarell', sans-serif;
+    font-weight: normal !important;
 	text-transform: uppercase;
 	font-size: 14px;
 	text-decoration: none;
 	margin: 0;
 	color: #DF5341 !important; 
-	text-align: center !important;
 }
 .homeNav {
 	width: 200px;
@@ -91,19 +97,32 @@
 .homeNav a {
 	color: #6D8AA4 !important; 
 	text-decoration: none;
+	letter-spacing: -1px;
+	font-family: 'Cantarell', sans-serif;
 	font-size: 14px;
 	text-align: center;
 }
 
 /* ---------CATEGORY--------- */
 
-.icon img{
-	padding-right : 15px;
+h3.icon {
+	position: relative;
+}
+
+h3.icon img {
+	position: absolute;
+	left: 4px;
+	top: 0px;
+}
+
+h3.icon .title {
+	padding-left: 45px;
 }
 
 .listTitle {
 	color: #6D8AA4;
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-family: 'Cantarell', sans-serif;
+    font-weight: normal;
 	font-size: 20px;
 	text-transform: uppercase;
 	text-align: center;
@@ -115,17 +134,18 @@
 
 /* ---------PRODUCT---------- */
 .prod-title h4 {
-	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: 20px;
+	font-family: 'Cantarell', sans-serif;
+	font-size: 18px;
 	font-weight: bold;
 	margin: 0;
 	margin-top: 0.5em;
 	text-align: center;
+	letter-spacing: -1px;
 }
 .prod-title h5 {
-	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	font-weight: bold;
+	font-family: 'Cantarell', sans-serif;
+	font-size: 16px;
+	font-weight: normal; 
 	margin: 0;
 	margin-top: 0.3em;
 	margin-bottom: 1.5em;
@@ -133,23 +153,21 @@
 	color: #6D8AA4;
 }
 .prodContainer {
- 	width: 80%;
- 	margin-left:10%;
  	margin-bottom: 2em;
  	border-radius: 10px;
- 	border: 1px solid  #cccccc;
+ 	box-shadow: 0 0 5px 0 #888;
+	-moz-box-shadow: 0 0 5px 0 #888;
+	-webkit-box-shadow: 0 0 5px 0 #888;
 	background: #ffffff;
+}
+.descrip {
+	padding: 15px;
+	font-size: 14px;
 }
 .prodContainer img {
 	border-radius: 10px;
 }
-.specs {
-	margin:0;
-	padding: 0;
-	margin-top: 0.5em;
-	margin-bottom: 1.2em;
-	margin-left: 0.8em;
-}
+
 .specs li {
 	list-style: none;
 	margin-top: 0.5em;
@@ -158,24 +176,22 @@
  font-weight: bold;
 }
 
-.ui-collapsible {
-	margin: 1em 0px;
-}
 /* ---------WISH LIST------------- */
-.wishList {
-	padding-top: 1em;
-}
-.wishList ul li {
+
+.wishList .ui-li > .ui-btn-inner {
 	height: 60px;
 }
 .wishList h3 {
+	font-family: 'Cantarell', sans-serif;
+	font-weight: normal;
 	margin: 0 0 0.5em 0;
 }
-.wishList .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-thumb {
-	padding-left: 130px;
+.wishList p {
+	color: #6D8AA4;
 }
+
 .wishList .ui-li-thumb {
-	max-width: 110px;
+	padding: 8px 0 5px 5px;
 }
 
 /* ---------PRODUCTS------------- */
