@@ -235,26 +235,31 @@ h3.icon .title {
 }
 
 
-
 /* ---------SEARCH------------- */
 .searchList {
-	xmargin-top: 1.5em;
+	margin-top: 1.5em;
 }
-.space {
-	xmargin-top: 4.5em;
+.searchBar {
+	border: none;
 }
-
 /* ---------ACTIVE COLOR---------- */
-.ui-btn-active.ui-btn-up-a {
-	border: 1px solid      		#bbbbbb      /*{a-bhover-border}*/;
-	background:     #fdce49     /*{a-bhover-background-color}*/;
+
+.ui-btn-active {
+	border: 1px solid #808080 /*{global-active-border}*/;
+	background: #00757c /*{global-active-background-color}*/;
 	font-weight: bold;
-	color:      					#2F3E46      /*{a-bhover-color}*/;
-	text-shadow:      0      /*{a-bhover-shadow-x}*/      1px      /*{a-bhover-shadow-y}*/      0      /*{a-bhover-shadow-radius}*/      #ffffff      /*{a-bhover-shadow-color}*/;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(     #fdce49     /*{a-bhover-background-start}*/), to(     #fde08b     /*{a-bhover-background-end}*/)); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient(     #fdce49     /*{a-bhover-background-start}*/,     #fde08b     /*{a-bhover-background-end}*/); /* Chrome 10+, Saf5.1+ */
-	background-image:    -moz-linear-gradient(     #fdce49     /*{a-bhover-background-start}*/,     #fde08b     /*{a-bhover-background-end}*/); /* FF3.6 */
-	background-image:     -ms-linear-gradient(     #fdce49     /*{a-bhover-background-start}*/,     #fde08b     /*{a-bhover-background-end}*/); /* IE10 */
-	background-image:      -o-linear-gradient(     #fdce49     /*{a-bhover-background-start}*/,     #fde08b     /*{a-bhover-background-end}*/); /* Opera 11.10+ */
-	background-image:         linear-gradient(     #fdce49     /*{a-bhover-background-start}*/,     #fde08b     /*{a-bhover-background-end}*/);
+	color: #ffffff /*{global-active-color}*/;
+	cursor: pointer;
+	text-shadow:      0      /*{global-active-shadow-x}*/      1px      /*{global-active-shadow-y}*/ 1px /*{global-active-shadow-radius}*/ #666 /*{global-active-shadow-color}*/;
+	text-decoration: none;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #00757c /*{global-active-background-start}*/), to( #02a7b1 /*{global-active-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #00757c /*{global-active-background-start}*/, #02a7b1 /*{global-active-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #00757c /*{global-active-background-start}*/, #02a7b1 /*{global-active-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #00757c /*{global-active-background-start}*/, #02a7b1 /*{global-active-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #00757c /*{global-active-background-start}*/, #02a7b1 /*{global-active-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #00757c /*{global-active-background-start}*/, #02a7b1 /*{global-active-background-end}*/);
+	      font-family: Helvetica, Arial, sans-serif      /*{global-font-family}*/;
+}
+.ui-btn-active a.ui-link-inherit {
+	color: #ffffff /*{global-active-color}*/;
 }
